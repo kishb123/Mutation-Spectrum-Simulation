@@ -4,4 +4,6 @@ The diversity of mutational spectra among organisms has only recently been linke
 
 # Summary of Simulation
 
-The sequence we evolved was randomly initialized and had length $N = 100$. This simulation assumed a genetically uniform population where selection is stronger than mutation. Since our population is assumed to be uniform, the sequence we evolve is a representation of the population, and we use the terms `organism' and `population' interchangeably. Our simulation has one degree of epistasis ($K = 1$), where each locus is epistatically coupled to $1/N \times 100 \%$ of the loci (since we allow for the possibility of a locus being its own epistatic partner). 
+The sequence we evolved was randomly initialized and had length N = 100. This simulation assumed a genetically uniform population where selection is stronger than mutation. Since our population is assumed to be uniform, the sequence we evolve is a representation of the population. Our simulation has one degree of epistasis (K = 1), where each locus is epistatically coupled to 1/N x 100% of the loci (since we allow for the possibility of a locus being its own epistatic partner). 
+
+We evolve the mutation spectrum using two approaches. The bias either evolves as a normal variate, or as a uniform variate. In either case, the step is accepted if the sequence is fit, or survives drift by stochastic fluctuations.
